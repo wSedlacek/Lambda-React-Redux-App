@@ -54,7 +54,9 @@ const MagicCardComponent = (props: MagicCardProps) => {
 
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.img} component='img' image={card.image_uris.art_crop} />
+      {card.image_uris && (
+        <CardMedia className={classes.img} component='img' image={card.image_uris.art_crop} />
+      )}
       <CardContent>
         <Typography variant='h3' gutterBottom>
           {card.name}
