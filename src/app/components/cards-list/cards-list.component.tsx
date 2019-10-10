@@ -8,10 +8,8 @@ import { makeStyles, CircularProgress } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    height: '100vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    display: 'grid',
+    margin: 10,
   },
 });
 
